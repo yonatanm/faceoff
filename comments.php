@@ -16,18 +16,14 @@
 <?php if ( post_password_required() )
     return; ?>
 
-<div id="comments" class="comments-area">
-
+<div id="comments" class="container-box">
     <?php if ( have_comments() ) : ?>
-        <h2 class="comments-title">
-            <i class="icon-comments-alt"></i>
-            <span>
+        <h6 class="title">
                 <?php
                     printf( _nx( 'One Comment', '%1$s Comments', '', 'comments title', 'wpex' ),
                         number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
                 ?>
-            </span>
-        </h2>
+        </h6>
 
         <ol class="comment-list">
             <?php wp_list_comments( array( 'callback' => 'gents_comment', 'style' => 'ol' ) ); ?>
@@ -52,7 +48,7 @@
 
     <?php comment_form(
         $fields =  array(
-            'title_reply' => '<span>'. __( 'Leave a Reply', 'wpex') .'</span>'
+            'title_reply' => '<h6 class="title">'. __( 'Leave a Reply', 'wpex') .'</h6>'
         ) ); ?>
 
 </div><!-- #comments -->

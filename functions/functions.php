@@ -172,7 +172,7 @@ function my_more_link( $more_link, $more_link_text ) {
     return str_replace( $more_link_text, '<p><a href="' . get_permalink() . '" class="readmore">Read More ></a> </p>', $more_link );
 }
 
-add_filter( 'the_content_more_link', 'my_more_link', 10, 2 );
+//add_filter( 'the_content_more_link', 'my_more_link', 10, 2 );
 
 
 /**
@@ -340,9 +340,9 @@ function gents_breadcrumb_lists() {
             'name' => __('Sidebar', 'gents'),
             'description' => __('footer.php', 'gents'),
             'id' => 'sidebar',
-            'before_title' => '<div class="sidebar-title"><h4>',
-            'after_title' => '</h4></div>',
-            'before_widget' => '<div id="%1$s" class="widget-wrapper %2$s">',
+            'before_title' => '<div class="title"><h3>',
+            'after_title' => '</h3></div>',
+            'before_widget' => '<div id="%1$s" class="container-box %2$s">',
             'after_widget' => '</div>'
         ));            
 

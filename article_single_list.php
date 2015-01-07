@@ -1,11 +1,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <div class="post-container">
+  <div class="container-box">
     <section class="post-meta">          
       <p class="author-avatar"><span><a href="<?php echo get_author_posts_url( $post->post_author ) ?>"><?php echo get_avatar( get_the_author_meta( 'ID' ), 50 ); ?></a></span>
         <ba><a href="<?php echo get_author_posts_url( $post->post_author ) ?>"><?php the_author_meta( 'display_name' ); ?></a></ba>
       </p>
-      <p>
-        <bd><time class="post-date"><?php the_date(); ?></time></bd>
+      <p class="post-date">
+        <bd class="post-date"><time class="post-date"><?php the_date(); ?></time></bd>
       </p>                
     </section><!-- end of .post-meta -->
     <section class="post-entry">
@@ -15,9 +15,9 @@
         </a>
       <?php endif; ?>
       <header>
-        <h1 class="post-title"><a href="<?php echo(esc_url( get_permalink() ) ) ?>"><?php the_title(); ?></a></h1>
+        <h1 class="title"><a href="<?php echo(esc_url( get_permalink() ) ) ?>"><?php the_title(); ?></a></h1>
       </header>
-      <?php the_content(); ?>
+      <?php the_content("Read more >"); ?>
       <?php custom_link_pages(array(
         'before' => '<nav class="pagination"><ul>' . __(''),
         'after' => '</ul></nav>',
