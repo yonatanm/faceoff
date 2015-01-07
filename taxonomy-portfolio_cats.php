@@ -5,6 +5,8 @@
 ?>
 
 <?php get_header(); ?>
+<div class="row">
+              <div class="col-lg-8">
 <?php if (have_posts()) : ?>
 
 
@@ -44,3 +46,7 @@
 
 <?php endif; ?>
 <?php get_footer(); ?>
+   <div class="col-lg-4">
+      <?php get_sidebar(); ?>
+   </div>
+ </div>

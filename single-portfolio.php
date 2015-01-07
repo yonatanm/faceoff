@@ -14,7 +14,8 @@
  */
 ?>
 <?php get_header(); ?>
-
+<div class="row">
+              <div class="col-lg-8">
 <div id="content-project">
 
  <?php if (have_posts()) : ?>
@@ -78,6 +79,9 @@
 <?php endif; ?>  
 
 </div><!-- end of #content -->
-
+   <div class="col-lg-4">
+      <?php get_sidebar(); ?>
+   </div>
+ </div>
 
 <?php get_footer(); ?>

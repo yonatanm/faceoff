@@ -15,7 +15,8 @@
  */
    ?>
    <?php get_header(); ?>
-
+<div class="row">
+              <div class="col-lg-8">
   <?php if (have_posts()) : ?>
 
   <?php 
@@ -66,7 +67,9 @@
 
      <?php endif; ?>  
 
-
    </div> <!-- /col-lg-8 -->
-
+   <div class="col-lg-4">
+      <?php get_sidebar(); ?>
+   </div>
+ </div>
    <?php get_footer(); ?>

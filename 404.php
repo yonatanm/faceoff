@@ -14,7 +14,8 @@
  */
 ?>
 <?php get_header(); ?>
-
+<div class="row">
+    <div class="col-lg-12">
 <!-- White Wrap Ver. 1 / Error -->
     <div id="w1">
         <div class="container">
@@ -35,5 +36,6 @@
             </div>
         </div><!-- /container -->
     </div> <!-- /White Wrap 1 / Error -->
-
+    </div>
+</div>
 <?php get_footer(); ?>

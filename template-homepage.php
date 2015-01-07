@@ -7,7 +7,8 @@
 ?>
 
 <?php get_header(); ?>
-
+<div class="row">
+              <div class="col-lg-12">
 <div class="home-wrap clearfix">
 	<?php
 	// Loop through homepage modules and get their corresponding files
@@ -23,5 +24,6 @@
    		endforeach;
 	endif; ?>
 </div><!-- END home-wrap -->
-
+ </div>
+</div>
 <?php get_footer(); ?>

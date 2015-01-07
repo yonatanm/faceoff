@@ -14,6 +14,8 @@
  */
 ?>
 <?php get_header(); ?>
+<div class="row">
+              <div class="col-lg-8">
    <?php global $more; $more = 0; ?>
 
 
@@ -78,5 +80,11 @@
        </article>
 
      <?php endif; ?>  
+
+   </div>
+     <div class="col-lg-4">
+      <?php get_sidebar(); ?>
+   </div>
+ </div>
 
    <?php get_footer(); ?>

@@ -61,7 +61,8 @@
 } ?>
 
 <?php get_header(); ?>
-
+<div class="row">
+              <div class="col-lg-12">
 
 <div class="container pt">
 
@@ -151,7 +152,8 @@
 
 </div><!-- container -->
 
-
+   </div>
+ </div>
 
 <?php endwhile; ?> 
 

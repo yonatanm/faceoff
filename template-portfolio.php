@@ -14,7 +14,8 @@
  */
  ?>
  <?php get_header(); ?>
-
+<div class="row">
+              <div class="col-lg-8">
  <div class="container pt">
 
   <div class="row mt">
@@ -69,6 +70,10 @@
 
 
 </div><!-- end of container -->
-
+</div>
+   <div class="col-lg-4">
+      <?php get_sidebar(); ?>
+   </div>
+ </div>
 
 <?php get_footer(); ?>

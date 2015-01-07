@@ -85,5 +85,3 @@
         <div id="wrapper" class="clearfix">
           <?php gents_in_wrapper(); // wrapper hook ?>
           <div class="container">
-            <div class="row">
-              <div class="col-lg-8">

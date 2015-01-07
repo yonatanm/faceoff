@@ -299,5 +299,13 @@ article .post-title a
 
 .sidebar
 {
-	
+	padding-top: 40px;
+}
+.sidebar .widget-wrapper
+{
+	padding: 10px;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	border: solid 1px #DDDDDD;
+	margin-bottom: 20px;
 }

@@ -14,11 +14,8 @@
  */
 ?>
 <?php get_header(); ?>
-
-<div id="ww">
-  <div class="container">
-   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 centered">
+<div class="row">
+  <div class="col-lg-8">
       <?php if (have_posts()) : ?>
 
       <?php while (have_posts()) : the_post(); ?>
@@ -77,10 +74,10 @@
                </article>
 
              <?php endif; ?>  
-           </div><!-- /col-lg-8 -->
-         </div><!-- /row -->
-       </div> <!-- /container -->
-     </div><!-- /ww -->
+           <div class="col-lg-4">
+      <?php get_sidebar(); ?>
+   </div>
+ </div>
 
      
 

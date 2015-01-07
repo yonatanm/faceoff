@@ -14,11 +14,8 @@
  */
 ?>
 <?php get_header(); ?>
-
-<div id="ww">
-  <div class="container">
-   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 centered">
+<div class="row">
+              <div class="col-lg-8">
 
         <div id="content">
             <h6><?php _e('We found','gents'); ?> 
@@ -99,11 +96,10 @@
 
 <?php endif; ?>  
       
-        </div><!-- end of #content -->
-    </div><!-- /col-lg-8 -->
-         </div><!-- /row -->
-       </div> <!-- /container -->
-     </div><!-- /ww -->
+       <div class="col-lg-4">
+      <?php get_sidebar(); ?>
+   </div>
+ </div>
 
 
 <?php get_footer(); ?>
