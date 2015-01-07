@@ -159,7 +159,7 @@ hr {
 {
 	background-color: #FFFFFF;
 	border: none;
-	box-shadow: 1px 0px 5px #DDDDDD;
+	box-shadow: 1px 0px 4px #444444;
 }
 
 
@@ -425,6 +425,10 @@ header.master-page-header .logo
 {
 	margin-top: 10px;
 }
+header.master-page-header .logo a
+{
+	text-align: center;
+}
 header.master-page-header .logo a:hover
 {
 	text-decoration: none;
@@ -434,10 +438,10 @@ header.master-page-header .logo span
 	clear: both;
 	float: none;
 	display: block;
-	letter-spacing: 6px;
-	font-size: 21px;
-	font-weight: 900;
-	line-height: 21px;
+	letter-spacing: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 14px;
 	padding: 3px 0px 7px 2px;
 }
 header.master-page-header nav ul
