@@ -1,3 +1,3 @@
-<div class="col-lg-4">
+<div class="sidebar">
 	<?php dynamic_sidebar('sidebar'); ?>
 </div>
