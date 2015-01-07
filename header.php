@@ -36,10 +36,10 @@
       <![endif]-->
     <?php wp_head(); ?> 
   </head>
-  <body <?php body_class(); ?>>                 
+  <body <?php body_class(); ?> dir="ltr">                 
     <?php gents_container(); // before container hook ?>
       <?php gents_header(); // before header hook ?>
-        <header>
+        <header class="master-page-header">
           <?php gents_in_header(); // header hook ?>
           <nav role="navigation">
             <div class="navbar navbar-inverse navbar-static-top">
@@ -51,18 +51,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <?php if( bi_get_data('custom_logo') !== '' ) { ?>
-                    <div id="logo">
-                      <a href="<?php echo home_url(); ?>/" title="<?php bloginfo( 'name' ); ?>" rel="home">
-                        <img src="<?php echo bi_get_data('custom_logo'); ?>" alt="<?php bloginfo( 'name' ) ?>" />
-                      </a>
-                    </div>
-                  <?php } else { ?>
-                    <?php if (is_front_page()) { ?>
-                      <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><b><?php bloginfo( 'name' ) ?></b></a>
-                    <?php } else { ?>
-                      <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><b><?php bloginfo( 'name' ) ?></b></a>
-                    <?php } } ?>
+                  <div class="logo">
+                    <a href="<?php echo home_url(); ?>/" title="<?php bloginfo( 'name' ); ?>" rel="home">
+                      <img src="<?php echo get_template_directory_uri(). '/images/logo.png' ?>" alt="<?php bloginfo( 'name' ) ?>" />
+                      <span>Techblog</span>
+                    </a>
+                  </div>
                 </div>
                 <div class="navbar-collapse collapse navbar-responsive-collapse">
                 <?php

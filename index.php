@@ -40,23 +40,7 @@
     endwhile;
   ?>
 
-  
-              <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-              <div class="container">
 
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <hr>
-              <nav>
-                <ul class="pager">
-                 <li class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'gents' ) ); ?></li>
-                 <li class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'gents' ) ); ?></li>
-               </ul><!-- end of .navigation -->
-             </nav>
-           </div>
-         </div>
-       </div>
-           <?php endif; ?>
 
          <?php else : ?>
 
@@ -86,5 +70,25 @@
       <?php get_sidebar(); ?>
    </div>
  </div>
+
+
+
+   
+              <?php if (  $wp_query->max_num_pages > 1 ) : ?>
+              
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <hr>
+              <nav>
+                <ul class="pager">
+                 <li class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'gents' ) ); ?></li>
+                 <li class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'gents' ) ); ?></li>
+               </ul><!-- end of .navigation -->
+             
+             </div>
+           </div>
+         
+           <?php endif; ?>
 
    <?php get_footer(); ?>

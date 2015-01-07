@@ -19,10 +19,13 @@
     <div class="col-lg-8">
       <div id="content">
         <?php while ( have_posts() ) : the_post(); ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <?php
+            //echo preg_match("/\p{Hebrew}/u", the_title());
+          ?>
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> dir="ltr">
             <div class="post-container">
               <section class="post-meta">
-                <p class="author-avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 50 ); ?><ba><?php the_author_meta( 'display_name' ); ?></ba></p>
+                <p class="author-avatar"><span><a href="<?php echo get_author_posts_url( $post->post_author ) ?>"><?php echo get_avatar( get_the_author_meta( 'ID' ), 50 ); ?></a></span><ba><a href="<?php echo get_author_posts_url( $post->post_author ) ?>"><?php the_author_meta( 'display_name' ); ?></a></ba></p>
                 <p><bd><time class="post-date"><?php the_date(); ?></time></bd></p>
               </section><!-- end of .post-meta -->
               <h1><?php the_title(); ?></h1>

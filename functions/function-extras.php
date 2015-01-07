@@ -22,6 +22,7 @@ function bootstrap_styles()
 	wp_register_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.0.3', 'all' );
 	wp_register_style( 'magnific', get_template_directory_uri() . '/css/magnific.css', array(), '0.9.4', 'all' );
 	wp_register_style( 'theme-style', get_stylesheet_uri(), false, '3.0.3' );
+	wp_register_style( 'responsive-style', get_template_directory_uri().'/css/responsive.css', false, '3.0.3' );
 
 
 	//  enqueue the style:
@@ -30,6 +31,7 @@ function bootstrap_styles()
 	wp_enqueue_style( 'font-awesome' );
 	wp_enqueue_style( 'magnific' );
 	wp_enqueue_style( 'theme-style' );
+	wp_enqueue_style( 'responsive-style' );
 	
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_styles' );

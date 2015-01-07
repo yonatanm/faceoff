@@ -166,9 +166,10 @@ add_filter('get_the_excerpt', 'gents_custom_excerpt_more');
 
 function my_more_link( $more_link, $more_link_text ) {
     
-    $read_more_text = bi_get_data('read_more_text', '' );
+    //$read_more_text = bi_get_data('read_more_text', '' );
             
-    return str_replace( $more_link_text, '<p><a href="' . get_permalink() . '" class="readmore">'.$read_more_text.' </a> </p>', $more_link );
+    //return str_replace( $more_link_text, '<p><a href="' . get_permalink() . '" class="readmore">'.$read_more_text.' </a> </p>', $more_link );
+    return str_replace( $more_link_text, '<p><a href="' . get_permalink() . '" class="readmore">Read More ></a> </p>', $more_link );
 }
 
 add_filter( 'the_content_more_link', 'my_more_link', 10, 2 );

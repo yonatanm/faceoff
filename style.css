@@ -23,7 +23,6 @@ CSS Rules: Sorted alphabetically for better organization.
 body {
 	-webkit-overflow-scrolling: touch;
 	-webkit-font-smoothing: antialiased;
-	background-color: #ffffff;
 	color: #555;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
@@ -81,7 +80,12 @@ hr {
 	text-transform: uppercase; 
 }
 
-
+.navbar-inverse
+{
+	background-color: #FFFFFF;
+	border: none;
+	box-shadow: 1px 0px 5px #DDDDDD;
+}
 
 
 .navbar-inverse .navbar-nav > li > a { 
@@ -239,10 +243,13 @@ bt { font-size: 12px; }
 {
 	font-family: "freight-sans-pro",sans-serif;
 }
-
+pre{
+	direction: ltr;
+}
 #wrapper
 {
 	background-color: #EFEFEF;
+	padding: 90px 0px 0px 0px;
 }
 
 /* Article listing */
@@ -250,7 +257,7 @@ bt { font-size: 12px; }
 
 article
 {
-	padding: 40px 0px 40px 0px;
+	padding: 10px 0px 40px 0px;
 }
 article .post-container
 {
@@ -258,6 +265,7 @@ article .post-container
 	background-color: #FFFFFF;
 	border: solid 1px #DDDDDD;
 	border-radius: 3px;
+	box-shadow: 0px 0px 3px #DDDDDD;
 }
 article .post-meta
 {
@@ -270,22 +278,37 @@ article .author-avatar
 	width: 100%;
 	text-align: center;
 }
+article .author-avatar > span
+{
+	margin: 0px auto 0px auto;
+	display: block;
+}
 article .author-avatar img
 {
 	border: solid 1px #DDDDDD;
 }
-article .author-avatar ba
+
+article .author-avatar ba,
+article .author-avatar ba a,
+article .author-avatar ba a:link,
+article .author-avatar ba a:active,
+article .author-avatar ba a:visited
 {
 	margin: 0px;
 	padding: 0px;
 	color: #444444;
+	text-decoration: none;
+}
+article .author-avatar ba a:hover
+{
+	text-decoration: underline;
 }
 article .post-meta .avatar
 {
-	display: block;
+	
 	clear: both;
 	float: none;
-	margin: 0px auto 0px auto;
+	
 	top:-48px;
 }
 
@@ -299,7 +322,7 @@ article .post-title a
 
 .sidebar
 {
-	padding-top: 40px;
+	padding-top: 10px;
 }
 .sidebar .widget-wrapper
 {
@@ -308,4 +331,67 @@ article .post-title a
 	border-radius: 3px;
 	border: solid 1px #DDDDDD;
 	margin-bottom: 20px;
+	box-shadow: 0px 0px 3px #DDDDDD;
+}
+
+
+/* Header*/
+
+header.master-page-header
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 1000;
+}
+
+.admin-bar header.master-page-header
+{
+	top: 33px;
+}
+
+header.master-page-header .logo
+{
+	margin-top: 10px;
+}
+header.master-page-header .logo img{
+	
+}
+header.master-page-header .logo span
+{
+	clear: both;
+	float: none;
+	display: block;
+	letter-spacing: 6px;
+	font-size: 21px;
+	font-weight: 900;
+	line-height: 21px;
+	padding: 3px 0px 7px 2px;
+}
+header.master-page-header nav ul
+{
+	margin-top: 22px;
+}
+header.master-page-header nav ul li
+{
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+
+}
+
+header.master-page-header nav ul li a,
+header.master-page-header nav ul li a:active,
+header.master-page-header nav ul li a:link,
+header.master-page-header nav ul li a:visited{
+	font-size: 16px;
+	line-height: 16px;
+	padding: 5px;
+	font-weight: 500;
+	text-decoration: none;
+}
+header.master-page-header nav ul li a:hover
+{
+	text-decoration: underline;
 }
