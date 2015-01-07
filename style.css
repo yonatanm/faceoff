@@ -49,7 +49,7 @@ a {
 	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-	color: #1abc9c;
+	color: #f28520;
 	transition: color 0.1s ease-in, background 0.1s ease-in;
 	word-wrap: break-word;
 }
@@ -76,53 +76,104 @@ hr {
 }
 
 
-.navbar { margin-bottom: 0px; text-transform: uppercase; }
+.navbar { 
+	margin-bottom: 0px; 
+	text-transform: uppercase; 
+}
 
-.navbar-inverse { padding-bottom: 70px; padding-top: 70px; }
 
-.navbar-inverse { background-color: #1abc9c; border-color: #16a085; }
 
-.navbar-inverse .navbar-nav > li > a { color: white; }
 
-.navbar-inverse .navbar-nav > li > a:hover { color: #222222; }
+.navbar-inverse .navbar-nav > li > a { 
+	color: white; 
+}
 
-.navbar-brand { font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+.navbar-inverse .navbar-nav > li > a:hover { 
+	color: #222222; 
+}
 
-.navbar-inverse .navbar-brand { color: white; }
+.navbar-brand { 
+	font-size: 20px; 
+	font-weight: 700; 
+	letter-spacing: 2px; 
+}
 
-.navbar-inverse .navbar-toggle { border-color: transparent; }
+.navbar-inverse .navbar-brand { 
+	color: white; 
+}
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover { background-color: transparent; color: #222222; }
+.navbar-inverse .navbar-toggle { 
+	border-color: transparent;
+}
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { background-color: transparent; color: #222222; }
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:hover { 
+	background-color: 
+	transparent; color: #222222; 
+}
 
-.progress-bar-theme { background-color: #1abc9c; }
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:hover, 
+.navbar-inverse .navbar-nav>.active>a:focus { 
+	background-color: transparent; color: #222222; 
+}
+
+.progress-bar-theme {
+ background-color: #1abc9c; 
+}
 
 
 /* Helpers */
 
-.mt { margin-bottom: 40px; margin-top: 40px; }
+.mt { 
+	margin-bottom: 40px; 
+	margin-top: 40px; 
+}
 
-.pt { padding-bottom: 50px; padding-top: 50px; }
+.pt { 
+	padding-bottom: 50px; 
+	padding-top: 50px; 
+}
 
 
 /* +++++ WRAP SECTIONS +++++ */
 
-#ww { background-color: #f2f2f2; padding-bottom: 70px; padding-top: 70px; }
+#ww { 
+	background-color: #f2f2f2; 
+	padding-bottom: 70px; padding-top: 70px; 
+}
 
 
-#footer { background-color: #2f2f2f; padding-bottom: 50px; padding-top: 50px; }
+#footer { 
+	background-color: #2f2f2f; 
+	padding-bottom: 50px; 
+	padding-top: 50px; 
+}
 
-#footer p { color: white; }
+#footer p { 
+	color: white; 
+}
 
-#footer h4 { color: white; padding-bottom: 20px; text-transform: uppercase; }
+#footer h4 { 
+	color: white; 
+	padding-bottom: 20px; 
+	text-transform: uppercase; 
+}
 
 
 /* +++++ Color Wraps / Blog Page +++++ */
 
-#grey { background-color: #f2f2f2; padding-bottom: 60px; padding-top: 60px; }
+#grey { 
+	background-color: #f2f2f2; 
+	padding-bottom: 60px; 
+	padding-top: 60px; 
+}
 
-#white { background-color: #ffffff; padding-bottom: 60px; padding-top: 60px; }
+#white { 
+	background-color: #ffffff; 
+	padding-bottom: 60px; 
+	padding-top: 60px; 
+}
 
 
 
@@ -178,3 +229,68 @@ bt { font-size: 12px; }
 /* WP User Avatar */
 
 .wp-user-avatar {margin: 0;}
+
+
+
+
+/* General */
+
+*
+{
+	font-family: "freight-sans-pro",sans-serif;
+}
+
+#wrapper
+{
+	background-color: #EFEFEF;
+}
+
+/* Article listing */
+
+
+article
+{
+	padding: 40px 0px 40px 0px;
+}
+article .post-container
+{
+	padding: 10px 20px 20px 20px;
+	background-color: #FFFFFF;
+	border: solid 1px #DDDDDD;
+	border-radius: 3px;
+}
+article .post-meta
+{
+	position: relative;
+}
+article .author-avatar
+{
+	position: absolute;
+	top: -36px;
+	width: 100%;
+	text-align: center;
+}
+article .author-avatar img
+{
+	border: solid 1px #DDDDDD;
+}
+article .author-avatar ba
+{
+	margin: 0px;
+	padding: 0px;
+	color: #444444;
+}
+article .post-meta .avatar
+{
+	display: block;
+	clear: both;
+	float: none;
+	margin: 0px auto 0px auto;
+	top:-48px;
+}
+
+article .post-title a
+{
+	font-family: bebas-neue,sans-serif;
+	text-transform: uppercase;
+}

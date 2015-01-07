@@ -36,11 +36,19 @@ add_action( 'wp_enqueue_scripts', 'bootstrap_styles' );
 
 
   function load_fonts() {
-            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Montserrat:400,700');
-            wp_enqueue_style( 'googleFonts');
+            //wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Montserrat:400,700');
+            //wp_enqueue_style( 'googleFonts');
+            wp_register_script('typekit', '//use.typekit.net/xsa6cds.js', array(), false, false );
+  			wp_register_script('typekit-init', get_template_directory_uri() . '/js/typekit.js', array(), false, false );
+  			wp_enqueue_script('typekit');
+  			wp_enqueue_script('typekit-init');
         }
  
-    add_action('wp_print_styles', 'load_fonts');
+
+ 	
+
+add_action('wp_print_styles', 'load_fonts');
+
 
 
 ?>
