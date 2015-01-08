@@ -22,7 +22,7 @@
           <?php
             //echo preg_match("/\p{Hebrew}/u", the_title());
           ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> dir="ltr">
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>  dir="<?php echo((preg_match("/\p{Hebrew}/u", the_title('','',false)))?'rtl':'ltr') ?>">
             <div class="container-box">
               <section class="post-meta">
                 <p class="author-avatar"><span><a href="<?php echo get_author_posts_url( $post->post_author ) ?>"><?php echo get_avatar( get_the_author_meta( 'ID' ), 50 ); ?></a></span><ba><a href="<?php echo get_author_posts_url( $post->post_author ) ?>"><?php the_author_meta( 'display_name' ); ?></a></ba></p>
