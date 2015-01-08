@@ -158,17 +158,24 @@ hr {
 .navbar { 
 	margin-bottom: 0px; 
 	text-transform: uppercase; 
+	box-shadow: 0px 1px 3px #666666;
 }
 
 .navbar-inverse
 {
 	background-color: #FFFFFF;
 	border: none;
-	box-shadow: 1px 0px 4px #444444;
+	
 }
-
-
-
+.navbar-header
+{
+	box-shadow: none;
+}
+.navbar-responsive-collapse
+{
+	box-shadow: none;
+	margin: 0px !important;
+}
 .navbar-inverse .navbar-brand { 
 	color: white; 
 }
@@ -178,17 +185,7 @@ hr {
 	background-color: #000000;
 }
 
-.navbar-inverse .navbar-nav>.active>a, 
-.navbar-inverse .navbar-nav>.active>a:hover { 
-	background-color: 
-	transparent; color: #222222; 
-}
 
-.navbar-inverse .navbar-nav>.active>a, 
-.navbar-inverse .navbar-nav>.active>a:hover, 
-.navbar-inverse .navbar-nav>.active>a:focus { 
-	background-color: transparent; color: #222222; 
-}
 
 .progress-bar-theme {
  background-color: #1abc9c; 
@@ -413,10 +410,10 @@ header.master-page-header
 {
 	top: 33px;
 }
-
 header.master-page-header .logo
 {
-	margin-top: 10px;
+	margin: 10px 0px 0px 10px;
+	display: inline-block;
 }
 header.master-page-header .logo a
 {
@@ -431,21 +428,24 @@ header.master-page-header .logo span
 	clear: both;
 	float: none;
 	display: block;
-	letter-spacing: 10px;
+	letter-spacing: 8px;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 14px;
-	padding: 3px 0px 7px 2px;
+	text-align: center;
+	padding: 3px 0px 7px 10px;
 }
 header.master-page-header nav ul
 {
-	margin-top: 22px;
+	margin: 13px 0px 0px 0px;
+	padding: 0px;
 }
 header.master-page-header nav ul li
 {
 	display: inline-block;
 	float: left;
-	margin-right: 10px;
+	margin: 0px 10px 0px 0px;
+	padding: 0px;
 
 }
 
@@ -453,8 +453,8 @@ header.master-page-header nav ul li a,
 header.master-page-header nav ul li a:active,
 header.master-page-header nav ul li a:link,
 header.master-page-header nav ul li a:visited{
-	font-size: 16px;
-	line-height: 16px;
+	font-size: 15px;
+	line-height: 15px;
 	padding: 5px;
 	font-weight: 600;
 	text-decoration: none;
@@ -463,11 +463,23 @@ header.master-page-header nav ul li a:hover
 {
 	text-decoration: underline;
 }
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-text
 {
 	color: #f28520;
 }
+.navbar-toggle
+{
+	margin-top: 13px;
+}
+.navbar-collapse
+{
+	border-top: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
 
 /* inputs */
 input[type="text"],

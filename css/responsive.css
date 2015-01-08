@@ -1,7 +1,119 @@
 @media only screen {
+	#wpadminbar
+	{
+		position: fixed;
+	}
 	.admin-bar header.master-page-header
 	{
 		top: 46px;
+	}
+	header.master-page-header nav ul
+	{
+		margin: 0px;
+		padding: 10px 0px 0px 0px;
+	}
+	header.master-page-header nav ul li
+	{
+		display: block;
+		float: none;
+		margin-right: 0px;
+		padding: 0px;
+		margin: 0px;
+	}
+	header.master-page-header nav ul li a, header.master-page-header nav ul li a:active, header.master-page-header nav ul li a:link, header.master-page-header nav ul li a:visited
+	{
+		display: block;
+		padding: 10px 0px 10px 25px;
+		font-size: 14px;
+		line-height: 14px;
+		border-top: solid 1px #EFEFEF;
+		font-weight: 400;
+	}
+
+
+
+
+	header.master-page-header nav ul li:first-child a
+	{
+		border-top: none;
+	}
+	.navbar
+	{
+		box-shadow: none;
+	}
+	.navbar-header
+	{
+		box-shadow: 0px 1px 3px #666666;
+	}
+	.navbar-responsive-collapse
+	{
+		box-shadow: 0px 1px 2px #DDDDDD;
+	}
+	.master-page-header .container{
+		padding: 0px;
+	}
+	header.master-page-header .logo
+	{
+		margin-left: 30px;
+	}
+	.navbar-inverse .navbar-toggle
+	{
+		margin-right: 30px;
+	}
+	.post-date bd
+	{
+		font-size: 12px;
+		line-height: 12px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar
+	{
+		box-shadow: 0px 1px 3px #666666;
+	}
+	header.master-page-header nav ul
+	{
+		margin: 13px 0px 0px 0px;
+		padding: 0px;
+	}
+	header.master-page-header nav ul li
+	{
+		display: inline-block;
+		float: left;
+		margin: 0px 10px 0px 0px;
+		padding: 0px;
+	}
+	header.master-page-header nav ul li a, header.master-page-header nav ul li a:active, header.master-page-header nav ul li a:link, header.master-page-header nav ul li a:visited
+	{
+		border-top: none;
+		font-size: 15px;
+		line-height: 15px;
+		font-weight: 600;
+	}
+	.navbar-header
+	{
+		box-shadow: none;
+	}
+	.navbar-responsive-collapse
+	{
+		box-shadow: none;
+	}
+	.master-page-header .container{
+		padding: 0px 15px 0px 15px;
+	}
+	header.master-page-header .logo
+	{
+		margin-left: 0px;
+	}
+	.navbar-inverse .navbar-toggle
+	{
+		margin-right: 0px;
+	}
+	.post-date bd
+	{
+		font-size: 15px;
+		line-height: 15px;
 	}
 }
 
@@ -12,3 +124,6 @@
 		top: 33px;
 	}
 }
+
+
+
