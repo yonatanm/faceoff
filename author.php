@@ -2,7 +2,7 @@
 /**
  * Blog Template
  *
-   Template Name: Archive
+   Template Name: Author
  *
  * @file           blog.php
  * @package        StanleyWP 
@@ -18,7 +18,10 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="container-title">
-      <h1 class="title">Blog Posts - <?php echo single_month_title(" "); ?></h1>
+      <h1 class="title"><?php the_author_meta( 'display_name' ); ?></h1>
+      <?php if ( get_the_author_meta( 'description' ) ) : ?>
+        <p><?php get_template_part( 'author-bio' ); ?></p>
+      <?php endif; ?>
     </div>
   </div>
 </div>

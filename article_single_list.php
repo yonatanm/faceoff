@@ -15,7 +15,7 @@
         </a>
       <?php endif; ?>
       <header>
-        <h1 class="title"><a href="<?php echo(esc_url( get_permalink() ) ) ?>"><?php the_title(); ?></a></h1>
+        <h2 class="title"><a href="<?php echo(esc_url( get_permalink() ) ) ?>"><?php the_title(); ?></a></h2>
       </header>
       <?php the_content("Read more >"); ?>
       <?php custom_link_pages(array(

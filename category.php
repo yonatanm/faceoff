@@ -2,7 +2,7 @@
 /**
  * Blog Template
  *
-   Template Name: Archive
+   Template Name: Category
  *
  * @file           blog.php
  * @package        StanleyWP 
@@ -14,11 +14,11 @@
  * @since          available since Release 1.0
  */
    ?>
-   <?php get_header(); ?>
+<?php get_header(); ?>
 <div class="row">
   <div class="col-lg-12">
     <div class="container-title">
-      <h1 class="title">Blog Posts - <?php echo single_month_title(" "); ?></h1>
+      <h1 class="title">Category: <?php echo single_cat_title( '', false ); ?></h1>
     </div>
   </div>
 </div>

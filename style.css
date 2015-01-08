@@ -26,7 +26,8 @@ body {
 	color: #555;
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 300;
+	font-weight: 400;
+	font-family: "freight-sans-pro",arial;
 }
 
 /* Titles */
@@ -34,15 +35,16 @@ h1, h2, h3, h4, h5, h6 {
 	color: #333; 
 	margin: 0px;
 	padding: 0px 0px 10px 0px;
+	font-weight: 600;
 }
 
 
 .title
 {
-	font-family: bebas-neue,sans-serif; 
-	text-transform: uppercase;
+	font-family: "myriad-pro-condensed", arial; 
 	border-bottom: solid 1px #DDDDDD; 
 	margin: 0px 0px 10px 0px;
+	font-weight: 600;
 }
 
 
@@ -98,7 +100,10 @@ h6.title
 	position: relative;
 	padding: 20px;
 }
-
+.container-title
+{
+	margin-bottom: 30px;
+}
 .author-avatar img { -webkit-border-radius: 95px; -moz-border-radius: 95px; border-radius: 95px; }
 
 
@@ -163,19 +168,6 @@ hr {
 }
 
 
-.navbar-inverse .navbar-nav > li > a { 
-	color: white; 
-}
-
-.navbar-inverse .navbar-nav > li > a:hover { 
-	color: #222222; 
-}
-
-.navbar-brand { 
-	font-size: 20px; 
-	font-weight: 700; 
-	letter-spacing: 2px; 
-}
 
 .navbar-inverse .navbar-brand { 
 	color: white; 
@@ -183,6 +175,7 @@ hr {
 
 .navbar-inverse .navbar-toggle { 
 	border-color: transparent;
+	background-color: #000000;
 }
 
 .navbar-inverse .navbar-nav>.active>a, 
@@ -260,12 +253,11 @@ hr {
 bd {
 	color: #999999;
 	font-size: 15px;
-	font-weight: 300;
 	font-style: italic;
 }
 
 /* Blog Author*/
-ba { font-size: 14px;text-transform: uppercase;font-weight: 600; }
+
 
 /* Blog Quote */
 .bq { font-size: 22px; padding-top: 30px; }
@@ -319,7 +311,7 @@ pre{
 }
 #wrapper
 {
-	background-color: #EFEFEF;
+	background-color: #F5F5F5;
 	padding: 110px 0px 0px 0px;
 }
 
@@ -372,9 +364,10 @@ article .author-avatar ba a:visited
 {
 	color: #666666;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 600;
 	font-size: 15px;
 	line-height: 15px;
+	text-transform: uppercase;
 }
 article .author-avatar ba a:hover
 {
@@ -463,14 +456,18 @@ header.master-page-header nav ul li a:visited{
 	font-size: 16px;
 	line-height: 16px;
 	padding: 5px;
-	font-weight: 500;
+	font-weight: 600;
 	text-decoration: none;
 }
 header.master-page-header nav ul li a:hover
 {
 	text-decoration: underline;
 }
-
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-text
+{
+	color: #f28520;
+}
 
 /* inputs */
 input[type="text"],

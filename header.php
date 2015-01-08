@@ -64,8 +64,7 @@
                     'theme_location' => 'top-bar',
                     'depth'      => 2,
                     'container'  => false,
-                    'menu_class'     => 'nav navbar-nav navbar-right',
-                    'walker'     => new Bootstrap_Walker_Nav_Menu()
+                    'menu_class'     => 'nav navbar-nav navbar-right'
                   );
                   wp_nav_menu($args);
                 ?>
