@@ -28,7 +28,7 @@
   } else {
     $paged = 1;
   }
-  query_posts( array( 'post_type' => 'post', 'paged' => $paged ) );
+  query_posts( array( 'post_type' => 'post', 'paged' => $paged, cat=>-30 ) );
   ?>   
 
 
