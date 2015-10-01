@@ -53,7 +53,7 @@
                   </button>
                   <div class="logo">
                     <a href="<?php echo home_url(); ?>/" title="<?php bloginfo( 'name' ); ?>" rel="home">
-                      <img src="<?php echo get_template_directory_uri(). '/images/logo.png' ?>" alt="<?php bloginfo( 'name' ) ?>" />
+                      <img src="<?php echo get_template_directory_uri(). '/images/ob_engineering2-2015-color-full.png' ?>" alt="<?php bloginfo( 'name' ) ?>" />
                       <span>Techblog</span>
                     </a>
                   </div>
